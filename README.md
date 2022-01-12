@@ -1,2 +1,3 @@
 # woc4_pyImageEditor_Priyanshu
-Project of Daiict
+Project of Mstc ( WOC 4.0)
+
