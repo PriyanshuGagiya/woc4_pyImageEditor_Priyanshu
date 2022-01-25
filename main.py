@@ -87,7 +87,12 @@ def ivc():
 def saves():
         global rs
         rs= rs.save("save1.jpg")
-
+def crop():
+        global rs
+        rs = rs.crop((1,2,300,300))
+        global hi
+        hi=ImageTk.PhotoImage(rs)
+        yechap=Label(img,image=hi).place(x=1,y=0)
 w=tkinter.Tk()
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
@@ -106,7 +111,7 @@ open.grid(column=12,row=0,padx=5,pady=5,sticky="N")
 save=tkinter.Button(w,text='Save',width=5,padx=15,pady=10,bg="GREY",fg="White",font='Arial',command=saves)
 save.grid(column=13,row=0,padx=10,pady=5,sticky="N")
 
-Crop=tkinter.Button(w,text='Crop',width=5,padx=5,pady=10,bg="GREY",fg="White",font='Arial')
+Crop=tkinter.Button(w,text='Crop',width=5,padx=5,pady=10,bg="GREY",fg="White",font='Arial',command=crop)
 Crop.grid(column=0,row=2,padx=5,pady=5,sticky="W")
 
 BW=tkinter.Button(w,text='Black and White',width=15,padx=5,pady=10,bg="GREY",fg="White",font='Arial',command=bw)
