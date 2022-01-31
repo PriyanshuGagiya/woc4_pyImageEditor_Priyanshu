@@ -3,7 +3,7 @@ from tkinter import *
 import tkinter
 import tkinter.filedialog 
 from tkinter.ttk import *
-from PIL import Image, ImageTk,ImageChops,ImageOps
+from PIL import Image, ImageTk,ImageChops,ImageOps,ImageEnhance
 import ctypes
 
 bc=2
